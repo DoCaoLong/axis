@@ -14,36 +14,108 @@
                 <a href="#" class="logo">
                     <img src="./images/logo.svg" alt="" />
                 </a>
-                <nav class="nav">
-                    <ul>
-                        <li>
-                            <a class="openMega" href="#">
-                                <span>
-                                    SERVICE
-                                    <img src="./images/arrow-down.svg" alt="" />
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#"> <span>ABOUT</span> </a>
-                        </li>
-                        <li>
-                            <a href="#"> <span>WORKS</span> </a>
-                        </li>
-                        <li>
-                            <a href="#"> <span>RECRUIT</span> </a>
-                        </li>
-                    </ul>
-
-                    <div class="contact">
-                        <a href="#">
-                            <span>Contact</span>
-                        </a>
-                        <button>
-                            <img src="./images/arrow.svg" alt="" />
-                        </button>
-                    </div>
-                </nav>
+                <div class="header-nav">
+                    <nav class="nav">
+                        <div class="nav-outer">
+                            <div class="nav-inner">
+                                <div class="nav-inner__logo">
+                                    <img src="./images/logo-black.svg" alt="" />
+                                </div>
+                                <div class="close-nav">
+                                    <img src="./images/x.svg" alt="" />
+                                </div>
+                                <ul class="nav-list">
+                                    <li class="mb-item">
+                                        <a class="openMega" href="#">
+                                            <span>
+                                                SERVICE
+                                                <img
+                                                    src="./images/arrow-down.svg"
+                                                    alt=""
+                                                />
+                                            </span>
+                                            <img
+                                                class="arr-mb"
+                                                src="./images/arr_down_black.svg"
+                                                alt=""
+                                            />
+                                        </a>
+                                        <div class="sub-menu">
+                                            <ul class="sub-menu__list">
+                                                <li>
+                                                    <a href="#"
+                                                        ><span>-REFORM</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">-RENOVATION</a>
+                                                </li>
+                                                <li><a href="#">-REPAIN</a></li>
+                                                <li>
+                                                    <a href="#"
+                                                        >-CONSTRUCTION</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>ABOUT</span> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>WORKS</span> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>RECRUIT</span> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>NEWS</span> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>PRIVACY POLICY</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="contact">
+                                    <a href="#">
+                                        <span>Contact</span>
+                                    </a>
+                                    <button>
+                                        <img src="./images/arrow.svg" alt="" />
+                                        <img
+                                            src="./images/arrow-right-black.svg"
+                                            alt=""
+                                        />
+                                    </button>
+                                </div>
+                                <div class="social-wrap">
+                                    <div class="socials">
+                                        <div class="social-item">
+                                            <img src="./images/fb.svg" alt="" />
+                                        </div>
+                                        <div class="social-item">
+                                            <img
+                                                src="./images/instagram.svg"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="social-item">
+                                            <img
+                                                src="./images/twitter.svg"
+                                                alt=""
+                                            />
+                                        </div>
+                                    </div>
+                                    <p class="social-text">©︎ 2023 ax-japan</p>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="hambuger">
+                    <img src="./images/menu.svg" alt="" />
+                </div>
             </header>
             <div id="mega-menu" class="mega-menu">
                 <div class="mega-menu__layer"></div>
@@ -316,17 +388,18 @@
                         </div>
                     </div>
                     <div class="readmore">
-                        <p class="readmore-content">
-                            <span class="readmore-content__text">
-                                2023.11.2
-                            </span>
-                            <span class="readmore-content__text">
-                                　WORKS
-                            </span>
-                            <span>
-                                新規リフォーム事例「〇〇邸」をアップいたしました。
-                            </span>
-                        </p>
+                        <div class="readmore-content">
+                            <p>
+                                <span class="readmore-content__text">
+                                    2023.11.2
+                                </span>
+                                <span class="readmore-content__text">
+                                    WORKS
+                                </span>
+                            </p>
+                            <span> 新規リフォーム事例「〇〇邸」 </span>
+                            <span> をアップいたしました。 </span>
+                        </div>
                         <div class="readmore-control">
                             <img src="./images/line-h.svg" alt="" />
                             <img
@@ -350,5 +423,7 @@
         </div>
     </body>
     <script src="./js/swiper-bundle.min.js"></script>
+    <!-- <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="./js/app.js"></script>
 </html>
