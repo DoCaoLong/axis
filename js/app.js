@@ -113,3 +113,84 @@ const swiper = new Swiper(".swiper", {
         prevEl: ".button-prev",
     },
 });
+
+//gsap animation
+function gsapAnimation() {
+    let tl = gsap.timeline();
+
+    tl.to(".bg__white", 0.5, {
+        opacity: 0,
+        delay: 0.5,
+    })
+        .to(".logo-anim", 0.5, {
+            opacity: 1,
+        })
+        .to(
+            ".line-bl",
+            1,
+            {
+                clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+            },
+            "-=.2"
+        )
+        .to(
+            ".line-bl__blue",
+            0.5,
+            {
+                opacity: 1,
+            },
+            "-=.1"
+        )
+        .to(
+            ".line-bl",
+            1,
+            {
+                x: "-35%",
+            },
+            "-=.2"
+        )
+        .to(
+            ".logo-anim",
+            0.5,
+            {
+                opacity: 0,
+            },
+            "-=1.1"
+        )
+        .to(".readmore, .swiper-pagination.custom-pagination", 0.5, {
+            opacity: 1,
+        })
+        .to(
+            ".text-under, .text-svg",
+            0.5,
+            {
+                opacity: 1,
+            },
+            "-=.4"
+        )
+        .to(
+            ".text-heading, .ax-jp",
+            0.5,
+            {
+                opacity: 1,
+            },
+            "-=.4"
+        )
+        .to(
+            ".text-desc",
+            0.5,
+            {
+                opacity: 1,
+            },
+            "-=.4"
+        )
+        .to(
+            ".logo, .header",
+            0.5,
+            {
+                opacity: 1,
+            },
+            "-=.4"
+        );
+}
+gsapAnimation();
